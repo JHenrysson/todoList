@@ -44,7 +44,7 @@ import React, { Component } from 'react';
                 <div>
                     <h1 className="app-title">My List</h1>
                 <div className="container">
-                    Add Items:
+                    <h1> Add Items:</h1>
                     <br/>
                     <input
                         type="text"
