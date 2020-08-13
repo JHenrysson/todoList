@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './app.css';
 
 
     class App extends Component {
@@ -39,16 +40,15 @@ import React, { Component } from 'react';
         const updatedList = list.filter(item => item.id !== id);
         this.setState({list:updatedList})
     }
-
         render() {
             return (
                 <div className="App">
                     <div>
-                    Add an Item...
+                    To-Do List
                     <br/>
                     <input
                         type="text"
-                        placeholder="Type item here..."
+                        placeholder="add item... "
                         value= {this.state.newItem}
                         onChange={e => this.updateInput("newItem",e.target.value)}
                         />
@@ -66,7 +66,7 @@ import React, { Component } from 'react';
                                  <button
                                      onClick = {() => this.deleteItem(item.id)}
                                  >
-                                     X
+                                     Delete
                                  </button>
                                  </li>
                              )
