@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './app.css';
 
 
     class App extends Component {
@@ -42,28 +41,30 @@ import './app.css';
     }
         render() {
             return (
-                <div className="App">
-                    <div>
-                    To-Do List
+                <div>
+                    <h1 className="app-title">My List</h1>
+                <div className="container">
+                    Add Items:
                     <br/>
                     <input
                         type="text"
-                        placeholder="add item... "
+                        placeholder="type item here... "
                         value= {this.state.newItem}
                         onChange={e => this.updateInput("newItem",e.target.value)}
                         />
                         <button
+                            className="btn-floating"
                             onClick={() => this.addItem()}
                             >
                             Add
                         </button>
-                        <br/>
+                    <br/> <br/>
                          <ul>
                              {this.state.list.map(item  => {
                              return(
                                  <li key={item.id}>
                                      {item.value}
-                                 <button
+                                 <button className="btn btn-floating"
                                      onClick = {() => this.deleteItem(item.id)}
                                  >
                                      Delete

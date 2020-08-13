@@ -1,26 +1,24 @@
 body{
-    background: thistle;
+    background: lightsteelblue;
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    text-align: center;
 }
 
-.btn{
-    background: pink;
-    margin: 20px;
-}
-
-.add-btn{
-    background: lightblue;
-    width: 40px;
-    height: 40px;
-}
 .app-title{
     text-align: center;
-    color: lightblue;
-    font-size: 70px;
+    color: black;
+    font-size: 40px;
 }
 .container{
-    border: 5px solid pink;
-    border-radius: 25px;
-
+    background-color: whitesmoke;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    padding-top: 2%;
+}
+.btn{
+    margin-left: 10px;
+}
+ul,li{
+    list-style-type: none;
 }
